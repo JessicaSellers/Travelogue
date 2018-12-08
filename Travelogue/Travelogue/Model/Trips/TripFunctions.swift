@@ -31,8 +31,8 @@ class TripFunctions {
 
     }
     
-    static func updateTrip(tripModel: TripModel) {
-        
+    static func updateTrip(at index: Int, title: String) {
+            Data.tripModels[index].title = title
     }
     
     static func deleteTrip(index: Int){

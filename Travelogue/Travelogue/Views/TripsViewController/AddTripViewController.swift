@@ -16,11 +16,15 @@ class AddTripViewController: UIViewController {
     @IBOutlet weak var popupView: UIView!
     
     var doneSaving: (() -> ())?
+    var tripIndexToEdit: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        if let index = tripIndexToEdit {
+            let trip = Data.tripModels[index]
+            tripNameTextField.text = trip.title
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,12 +33,26 @@ class AddTripViewController: UIViewController {
     }
     
     @IBAction func saveName(_ sender: Any) {
-        if tripNameTextField.text != "" {
-            TripFunctions.createTrip(tripModel: TripModel(title: tripNameTextField.text!))
+        tripNameTextField.rightViewMode = .never
+        
+        guard tripNameTextField.text != "", let newTripName = tripNameTextField.text else {
+            
+            return
+        }
+
+         if let index = tripIndexToEdit {
+                TripFunctions.updateTrip(at: index, title: newTripName)
+            
+        }
+         else {
+
+                TripFunctions.createTrip(tripModel: TripModel(title: newTripName))
+            
         }
         if let doneSaving = doneSaving {
             doneSaving()
         }
+        
         dismiss(animated: true)
         
     }
