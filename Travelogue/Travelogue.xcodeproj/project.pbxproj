@@ -24,6 +24,7 @@
 		4C73843921BB6A040092EBDF /* EntriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C73843821BB6A040092EBDF /* EntriesModel.swift */; };
 		4C73843B21BB6D4D0092EBDF /* EntriesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C73843A21BB6D4D0092EBDF /* EntriesStoryboard.storyboard */; };
 		4C73843D21BB70850092EBDF /* EntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C73843C21BB70850092EBDF /* EntriesViewController.swift */; };
+		4C73843F21BB7B740092EBDF /* EntriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C73843E21BB7B740092EBDF /* EntriesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		4C73843821BB6A040092EBDF /* EntriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesModel.swift; sourceTree = "<group>"; };
 		4C73843A21BB6D4D0092EBDF /* EntriesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EntriesStoryboard.storyboard; sourceTree = "<group>"; };
 		4C73843C21BB70850092EBDF /* EntriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesViewController.swift; sourceTree = "<group>"; };
+		4C73843E21BB7B740092EBDF /* EntriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				4C73843621BB69EC0092EBDF /* EntriesFunctions.swift */,
+				4C73843E21BB7B740092EBDF /* EntriesTableViewCell.swift */,
 				4C73843821BB6A040092EBDF /* EntriesModel.swift */,
 				4C73843C21BB70850092EBDF /* EntriesViewController.swift */,
 			);
@@ -286,6 +289,7 @@
 				4C2953A421B8B09800D2800D /* Travelogue.xcdatamodeld in Sources */,
 				4C73843921BB6A040092EBDF /* EntriesModel.swift in Sources */,
 				4C73842721BB344D0092EBDF /* TripsViewController.swift in Sources */,
+				4C73843F21BB7B740092EBDF /* EntriesTableViewCell.swift in Sources */,
 				4C73841F21BB2AF70092EBDF /* TripFunctions.swift in Sources */,
 				4C73842E21BB4AF30092EBDF /* AddTripViewController.swift in Sources */,
 				4C73842921BB3C9A0092EBDF /* TripsTableViewCell.swift in Sources */,
