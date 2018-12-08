@@ -10,6 +10,7 @@ import UIKit
 
 class TripsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var addButton: UIBarButtonItem!
     @IBOutlet weak var tripsTableView: UITableView!
     
      override func viewDidLoad() {
