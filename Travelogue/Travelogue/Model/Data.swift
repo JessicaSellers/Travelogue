@@ -10,4 +10,6 @@ import Foundation
 
 class Data {
     static var tripModels = [TripModel]()
+    
+    static var entriesModels = [EntriesModel]()
 }

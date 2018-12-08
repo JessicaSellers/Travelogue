@@ -50,6 +50,7 @@
                                         <connections>
                                             <outlet property="tripTitle" destination="yvd-nB-wE4" id="22T-5S-MaJ"/>
                                             <outlet property="tripsDisplayedView" destination="RVv-Nd-O3U" id="O38-JZ-hfc"/>
+                                            <segue destination="v98-Ky-D4d" kind="show" id="kGB-PJ-uVZ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -94,6 +95,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yme-6D-Aww" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="96.799999999999997" y="152.47376311844079"/>
+        </scene>
+        <!--EntriesStoryboard-->
+        <scene sceneID="cjC-rd-TXT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EntriesStoryboard" id="v98-Ky-D4d" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dz7-Wh-gQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="689" y="-82"/>
         </scene>
         <!--AddTripStoryboard-->
         <scene sceneID="2Sw-tf-uax">
