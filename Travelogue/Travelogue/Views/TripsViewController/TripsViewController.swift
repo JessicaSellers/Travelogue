@@ -55,6 +55,18 @@ class TripsViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 94
     }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let delete = UIContextualAction(style: .destructive, title: "Delete") { (contextualAction, view, actionPerformed: (Bool)->Void) in
+            
+            TripFunctions.deleteTrip(index: indexPath.row)
+            self.tripsTableView.deleteRows(at: [indexPath], with: .automatic)
+            actionPerformed(true)
+        }
+        
+        return UISwipeActionsConfiguration(actions: [delete])
+    }
 
 
 }
