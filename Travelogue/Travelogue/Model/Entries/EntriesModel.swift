@@ -18,3 +18,4 @@ class EntriesModel {
         self.note = note
     }
 }
+

@@ -24,6 +24,7 @@ class TripsViewController: UIViewController, UITableViewDataSource, UITableViewD
             self?.tripsTableView.reloadData()
         })
         
+        
     }
 
     @IBAction func unwindToTripsStoryboard(_ sender: UIStoryboardSegue) {

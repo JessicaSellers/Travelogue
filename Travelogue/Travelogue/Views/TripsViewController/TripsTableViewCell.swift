@@ -24,4 +24,5 @@ class TripsTableViewCell: UITableViewCell {
         tripTitle.text = tripModel.title
     }
 
+    
 }

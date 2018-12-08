@@ -17,3 +17,4 @@ class TripModel {
         self.title = title
     }
 }
+

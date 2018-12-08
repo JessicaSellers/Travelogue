@@ -31,7 +31,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title of Entry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diZ-7f-ays">
-                                                    <rect key="frame" x="19" y="11" width="117" height="23"/>
+                                                    <rect key="frame" x="18" y="11" width="117" height="23"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <nil key="textColor"/>
@@ -92,8 +92,12 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Travelogue Entry" id="nkJ-1H-6DL">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="J8E-WJ-0tz"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="FpX-pw-t0e"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="J8E-WJ-0tz">
+                                            <color key="tintColor" red="0.26986333880000002" green="0.2795421703" blue="0.3792036802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="FpX-pw-t0e">
+                                            <color key="tintColor" red="0.26986333880000002" green="0.2795421703" blue="0.3792036802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -119,8 +123,12 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem systemItem="camera" id="sry-Oc-KYP"/>
-                                    <barButtonItem systemItem="organize" id="Qcs-xw-wDy"/>
+                                    <barButtonItem systemItem="camera" id="sry-Oc-KYP">
+                                        <color key="tintColor" red="0.15041245140000001" green="0.15564778939999999" blue="0.33367703050000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="organize" id="Qcs-xw-wDy">
+                                        <color key="tintColor" red="0.1477672458" green="0.1557489038" blue="0.33432880040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="bezel" placeholder="Write your entry here..." minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="H8w-Gb-Ya8">

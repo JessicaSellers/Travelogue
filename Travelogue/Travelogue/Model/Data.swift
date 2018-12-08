@@ -13,3 +13,4 @@ class Data {
     
     static var entriesModels = [EntriesModel]()
 }
+

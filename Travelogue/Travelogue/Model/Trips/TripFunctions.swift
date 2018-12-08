@@ -39,3 +39,4 @@ class TripFunctions {
         Data.tripModels.remove(at: index)
     }
 }
+
