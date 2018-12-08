@@ -31,7 +31,7 @@
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="LxA-b9-PVn">
                                             <color key="tintColor" red="0.16045087575912476" green="0.16352495551109314" blue="0.22155332565307617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="ppU-Au-LLW" kind="presentation" id="uMQ-4G-Lgx"/>
+                                                <segue destination="ppU-Au-LLW" kind="presentation" identifier="toAddTripSegue" id="uMQ-4G-Lgx"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>

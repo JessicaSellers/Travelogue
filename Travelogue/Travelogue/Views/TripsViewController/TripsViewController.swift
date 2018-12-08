@@ -25,6 +25,15 @@ class TripsViewController: UIViewController, UITableViewDataSource, UITableViewD
         
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "toAddTripSegue" {
+            let popup = segue.destination as! AddTripViewController
+            popup.doneSaving = { [weak self] in
+                self?.tripsTableView.reloadData()
+            }
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Data.tripModels.count
     }

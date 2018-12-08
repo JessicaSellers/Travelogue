@@ -15,6 +15,8 @@ class AddTripViewController: UIViewController {
     @IBOutlet weak var tripNameTextField: UITextField!
     @IBOutlet weak var popupView: UIView!
     
+    var doneSaving: (() -> ())?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,12 +29,18 @@ class AddTripViewController: UIViewController {
     }
     
     @IBAction func saveName(_ sender: Any) {
+        TripFunctions.createTrip(tripModel: TripModel(title: tripNameTextField.text!))
+        
+        if let doneSaving = doneSaving {
+            doneSaving()
+        }
         dismiss(animated: true)
+        
     }
     
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true)
     }
-    
+
 
 }
