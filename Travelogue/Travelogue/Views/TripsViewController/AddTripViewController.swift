@@ -29,8 +29,9 @@ class AddTripViewController: UIViewController {
     }
     
     @IBAction func saveName(_ sender: Any) {
-        TripFunctions.createTrip(tripModel: TripModel(title: tripNameTextField.text!))
-        
+        if tripNameTextField.text != "" {
+            TripFunctions.createTrip(tripModel: TripModel(title: tripNameTextField.text!))
+        }
         if let doneSaving = doneSaving {
             doneSaving()
         }
