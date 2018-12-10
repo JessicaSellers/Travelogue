@@ -12,6 +12,7 @@
 		4C2953A621B8B09800D2800D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2953A521B8B09800D2800D /* Assets.xcassets */; };
 		4C2953A921B8B09800D2800D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2953A721B8B09800D2800D /* LaunchScreen.storyboard */; };
 		4C2953B421B8B09900D2800D /* TravelogueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2953B321B8B09900D2800D /* TravelogueUITests.swift */; };
+		4C4DBF8421BF17590070536B /* AddEntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4DBF8321BF17590070536B /* AddEntriesViewController.swift */; };
 		4C73841D21BB2AE60092EBDF /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C73841C21BB2AE60092EBDF /* TripModel.swift */; };
 		4C73841F21BB2AF70092EBDF /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C73841E21BB2AF70092EBDF /* TripFunctions.swift */; };
 		4C73842121BB2F030092EBDF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C73842021BB2F030092EBDF /* Data.swift */; };
@@ -47,6 +48,7 @@
 		4C2953AF21B8B09900D2800D /* TravelogueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelogueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2953B321B8B09900D2800D /* TravelogueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelogueUITests.swift; sourceTree = "<group>"; };
 		4C2953B521B8B09900D2800D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C4DBF8321BF17590070536B /* AddEntriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntriesViewController.swift; sourceTree = "<group>"; };
 		4C73841C21BB2AE60092EBDF /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		4C73841E21BB2AF70092EBDF /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
 		4C73842021BB2F030092EBDF /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -124,7 +126,6 @@
 		4C73841A21BB2A950092EBDF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4C73843521BB69C50092EBDF /* Entries */,
 				4C73842021BB2F030092EBDF /* Data.swift */,
 				4C73841B21BB2A9D0092EBDF /* Trips */,
 			);
@@ -143,7 +144,6 @@
 		4C73842221BB33E10092EBDF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4C73843121BB693E0092EBDF /* TripEntriesViewController */,
 				4C73842321BB33FA0092EBDF /* TripsViewController */,
 			);
 			path = Views;
@@ -157,15 +157,9 @@
 				4C73842621BB344D0092EBDF /* TripsViewController.swift */,
 				4C73842821BB3C9A0092EBDF /* TripsTableViewCell.swift */,
 				4C73842D21BB4AF30092EBDF /* AddTripViewController.swift */,
+				4C73843521BB69C50092EBDF /* Entries */,
 			);
 			path = TripsViewController;
-			sourceTree = "<group>";
-		};
-		4C73843121BB693E0092EBDF /* TripEntriesViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TripEntriesViewController;
 			sourceTree = "<group>";
 		};
 		4C73843521BB69C50092EBDF /* Entries */ = {
@@ -176,6 +170,7 @@
 				4C73843E21BB7B740092EBDF /* EntriesTableViewCell.swift */,
 				4C73843821BB6A040092EBDF /* EntriesModel.swift */,
 				4C73843C21BB70850092EBDF /* EntriesViewController.swift */,
+				4C4DBF8321BF17590070536B /* AddEntriesViewController.swift */,
 			);
 			path = Entries;
 			sourceTree = "<group>";
@@ -289,6 +284,7 @@
 				4C2953A421B8B09800D2800D /* Travelogue.xcdatamodeld in Sources */,
 				4C73843921BB6A040092EBDF /* EntriesModel.swift in Sources */,
 				4C73842721BB344D0092EBDF /* TripsViewController.swift in Sources */,
+				4C4DBF8421BF17590070536B /* AddEntriesViewController.swift in Sources */,
 				4C73843F21BB7B740092EBDF /* EntriesTableViewCell.swift in Sources */,
 				4C73841F21BB2AF70092EBDF /* TripFunctions.swift in Sources */,
 				4C73842E21BB4AF30092EBDF /* AddTripViewController.swift in Sources */,

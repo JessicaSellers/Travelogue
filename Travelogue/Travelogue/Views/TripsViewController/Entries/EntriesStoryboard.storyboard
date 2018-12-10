@@ -24,7 +24,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.26986333880000002" green="0.2795421703" blue="0.3792036802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="71" id="Sqf-w9-5N0" customClass="EntriesTableViewCell" customModule="Travelogue" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="71" id="Sqf-w9-5N0" customClass="EntriesTableViewCell" customModule="Travelogue" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="71"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sqf-w9-5N0" id="aK4-e5-o2N">
@@ -38,12 +38,13 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPQ-Ye-HF7">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPQ-Ye-HF7">
                                                     <rect key="frame" x="21" y="11" width="339" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -89,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="152.80000000000001" y="149.77511244377811"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Entries View Controller-->
         <scene sceneID="059-3k-vjw">
             <objects>
-                <viewController id="Zsm-Lg-sVJ" sceneMemberID="viewController">
+                <viewController id="Zsm-Lg-sVJ" customClass="AddEntriesViewController" customModule="Travelogue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ndq-R1-BoY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,9 +105,15 @@
                                     <navigationItem title="Travelogue Entry" id="nkJ-1H-6DL">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="J8E-WJ-0tz">
                                             <color key="tintColor" red="0.26986333880000002" green="0.2795421703" blue="0.3792036802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="cancelEntryAdd:" destination="Zsm-Lg-sVJ" id="BOP-A8-Mrd"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="FpX-pw-t0e">
                                             <color key="tintColor" red="0.26986333880000002" green="0.2795421703" blue="0.3792036802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="saveEntry:" destination="Zsm-Lg-sVJ" id="Var-8Z-mMB"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -152,6 +159,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OH2-rb-qRN"/>
                     </view>
+                    <connections>
+                        <outlet property="entryNote" destination="H8w-Gb-Ya8" id="5Fg-RJ-1HB"/>
+                        <outlet property="titleEntry" destination="gZE-xd-d4B" id="hOr-Tn-lBr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S8K-9I-GgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

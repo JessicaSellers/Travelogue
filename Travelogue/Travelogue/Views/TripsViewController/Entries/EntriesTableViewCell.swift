@@ -21,7 +21,7 @@ class EntriesTableViewCell: UITableViewCell {
 
     func setup(entryModel: EntriesModel) {
         entryTitleLabel.text = entryModel.title
-        entryDateLabel.text = "July 4"
+        entryDateLabel.text = "July 4, 2018"
     }
 
 }

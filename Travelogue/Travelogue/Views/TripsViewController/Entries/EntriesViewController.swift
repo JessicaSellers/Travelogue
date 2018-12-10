@@ -41,6 +41,18 @@ class EntriesViewController: UIViewController, UITableViewDataSource, UITableVie
         return 71
     }
     
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let delete = UIContextualAction(style: .destructive, title: "Delete") { (contextualAction, view, actionPerformed: (Bool)->Void) in
+            
+            EntriesFunctions.deleteEntry(index: indexPath.row)
+            self.entryTableView.deleteRows(at: [indexPath], with: .automatic)
+            actionPerformed(true)
+        }
+        
+        return UISwipeActionsConfiguration(actions: [delete])
+    }
+    
 /*    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
