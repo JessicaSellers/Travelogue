@@ -11,6 +11,7 @@ import UIKit
 class EntriesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
 
     @IBOutlet weak var entryTableView: UITableView!
+    var entryIndexToEdit: Int?
     
     
     override func viewDidLoad() {
@@ -24,6 +25,7 @@ class EntriesViewController: UIViewController, UITableViewDataSource, UITableVie
         })
         
     }
+    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Data.entriesModels.count
@@ -53,11 +55,21 @@ class EntriesViewController: UIViewController, UITableViewDataSource, UITableVie
         return UISwipeActionsConfiguration(actions: [delete])
     }
     
-/*    override func didReceiveMemoryWarning() {
+   override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    } */
+    } 
     
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let edit = UIContextualAction(style: .normal, title: "Edit") { (contextualAction, view, actionPerformed: (Bool)->Void) in
+            self.entryIndexToEdit = indexPath.row
+            self.performSegue(withIdentifier: "toAddEntrySegue", sender: nil)
+            actionPerformed(true)
+        }
+        edit.backgroundColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
+        
+        return UISwipeActionsConfiguration(actions: [edit])
+    }
 
 
 

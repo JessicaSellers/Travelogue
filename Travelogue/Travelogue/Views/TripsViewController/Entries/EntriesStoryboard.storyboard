@@ -71,7 +71,7 @@
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="HyG-Lm-jsC">
                                             <color key="tintColor" red="0.26986333881838803" green="0.27954217032932599" blue="0.37920368020304573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="Zsm-Lg-sVJ" kind="show" id="lvT-rm-Eeg"/>
+                                                <segue destination="Zsm-Lg-sVJ" kind="show" identifier="toAddEntriesSegue" id="lvT-rm-Eeg"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
