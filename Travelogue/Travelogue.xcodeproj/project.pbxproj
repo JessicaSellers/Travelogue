@@ -154,7 +154,6 @@
 			children = (
 				4C73842421BB343B0092EBDF /* TripsStoryboard.storyboard */,
 				4C73842A21BB4A4C0092EBDF /* AddTripStoryboard.storyboard */,
-				4C73843A21BB6D4D0092EBDF /* EntriesStoryboard.storyboard */,
 				4C73842621BB344D0092EBDF /* TripsViewController.swift */,
 				4C73842821BB3C9A0092EBDF /* TripsTableViewCell.swift */,
 				4C73842D21BB4AF30092EBDF /* AddTripViewController.swift */,
@@ -173,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				4C73843621BB69EC0092EBDF /* EntriesFunctions.swift */,
+				4C73843A21BB6D4D0092EBDF /* EntriesStoryboard.storyboard */,
 				4C73843E21BB7B740092EBDF /* EntriesTableViewCell.swift */,
 				4C73843821BB6A040092EBDF /* EntriesModel.swift */,
 				4C73843C21BB70850092EBDF /* EntriesViewController.swift */,

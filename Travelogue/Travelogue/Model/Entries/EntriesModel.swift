@@ -7,15 +7,17 @@
 //
 
 import Foundation
+import UIKit
 
-class EntriesModel {
-    //var trip: TripModel
+struct EntriesModel {
     var title: String
     var note: String
+    //var image: UIImage?
     
     init(title: String, note: String) {
         self.title = title
         self.note = note
+        //self.image = image
     }
 }
 

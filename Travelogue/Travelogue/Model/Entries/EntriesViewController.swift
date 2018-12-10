@@ -30,17 +30,21 @@ class EntriesViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = entryTableView.dequeueReusableCell(withIdentifier: "entryCell") as! EntriesTableViewCell
+        let cell = entryTableView.dequeueReusableCell(withIdentifier: "cell") as! EntriesTableViewCell
         
-        //cell.setup(entryModel: Data.entriesModels[indexPath.row])
+        cell.setup(entryModel: Data.entriesModels[indexPath.row])
         
         return cell
     }
     
-    override func didReceiveMemoryWarning() {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 71
+    }
+    
+/*    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
+    } */
     
 
 

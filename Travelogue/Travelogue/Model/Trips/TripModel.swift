@@ -8,9 +8,10 @@
 
 import Foundation
 
-class TripModel {
+struct TripModel {
     let id: UUID
     var title: String
+    var entriesModel = [EntriesModel]()
     
     init(title: String) {
         id = UUID()
