@@ -11,6 +11,7 @@ import UIKit
 class AddEntriesViewController: UIViewController {
     
     
+    @IBOutlet var addEntriesView: UIView!
     @IBOutlet weak var titleEntry: UITextField!
     @IBOutlet weak var entryNote: UITextField!
     

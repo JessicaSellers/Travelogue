@@ -160,6 +160,7 @@
                         <viewLayoutGuide key="safeArea" id="OH2-rb-qRN"/>
                     </view>
                     <connections>
+                        <outlet property="addEntriesView" destination="Ndq-R1-BoY" id="V9E-Ns-XSJ"/>
                         <outlet property="entryNote" destination="H8w-Gb-Ya8" id="5Fg-RJ-1HB"/>
                         <outlet property="titleEntry" destination="gZE-xd-d4B" id="hOr-Tn-lBr"/>
                     </connections>

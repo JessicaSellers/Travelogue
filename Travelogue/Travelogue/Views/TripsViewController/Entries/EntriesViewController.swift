@@ -25,7 +25,15 @@ class EntriesViewController: UIViewController, UITableViewDataSource, UITableVie
         })
         
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "toAddEntrySegue" {
+            let addEntriesView = segue.destination as! AddEntriesViewController
+            addEntriesView.entryIndexToEdit = self.entryIndexToEdit
+            addEntriesView.doneSaving = { [weak self] in
+                self?.entryTableView.reloadData()
+            }
+        }
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Data.entriesModels.count
